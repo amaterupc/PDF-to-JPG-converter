@@ -1,0 +1,5 @@
+{
+  "name": "PDF to JPG Converter",
+  "description": "Secure, client-side PDF to JPG converter. Process files up to 20 pages directly in your browser without server uploads. Features high-quality 150dpi output and page selection.",
+  "requestFramePermissions": []
+}
