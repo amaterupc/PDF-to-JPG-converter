@@ -1,11 +1,9 @@
 import * as pdfjs from 'pdfjs-dist';
 import { DPI_SCALE } from '../types';
 
-/**
- * package.json の依存関係と一致したバージョンを使用します。
- */
+// package.json の pdfjs-dist バージョンと一致させてください
 const PDFJS_VERSION = '4.10.38';
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.worker.min.mjs`;
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${PDFJS_VERSION}/build/pdf.worker.min.mjs`;
 
 export class PdfService {
   private pdfDocument: any = null;
